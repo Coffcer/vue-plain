@@ -34,7 +34,7 @@ let vm = new Vue({
 
 console.log( Vue.plain(vm.a) );  
 // { a: { a1: 2 } } 
-// The function will miss, but you should not use function in Vue data
+// The function will be lose, but in general, you should not add function in Vue data
 
 console.log( Vue.plain(vm.c) );  
 // [1, 2, 3]
@@ -52,7 +52,7 @@ childComponent = {
             }
         }
     },
-    ready () {
+    created () {
         // this change does not affect parentComponent.obj
         this.obj.a = 1;
     }
