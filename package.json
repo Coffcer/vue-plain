@@ -1,0 +1,7 @@
+{
+  "name": "vue-plain",
+  "description": "Get plain object from vue getter/setter object",
+  "version": "0.1.0",
+  "author": "coffce",
+  "main": "./vue-plain.js"
+}
