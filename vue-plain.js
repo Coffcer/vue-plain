@@ -6,8 +6,7 @@
             }
 
             try {
-                data = JSON.parse(JSON.stringify(data));
-                return data;
+                return JSON.parse(JSON.stringify(data));
             } catch (e) {
                 throw 'vue-plain: Parse failed, make sure your parameter can be JSON.stringify';
             }
