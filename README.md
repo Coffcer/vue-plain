@@ -40,7 +40,7 @@ console.log( Vue.plain(vm.c) );
 // [1, 2, 3]
 ```
 
-with prop.coerce
+with prop.coerce (in Vue@1.0.18 ~ Vue@1.0.20, coerce() has a bug, so you can't do this in these versions)
 
 ``` js
 childComponent = {
